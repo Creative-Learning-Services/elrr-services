@@ -19,6 +19,9 @@ The API Endpoints are documented interactively by swagger/openapi. Launch the ap
 - Database Client (can use postgres CLI, pgadmin, or a 3rd party client like [DBeaver](https://dbeaver.io/))
 - REST Client to test endpoints (e.g. Postman, RapidAPI, or just cURL)
 
+## Other Projects
+- In order to build Services, you will need to have cloned and installed the [ELRR Entities library](https://github.com/adlnet/elrr-services-entities) (on which this project depends).
+
 ## Running the Application
 
 ### 1. Build the application
