@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 
-import java.time.LocalDateTime;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -373,8 +372,8 @@ public class GoalControllerTest extends CommonControllerTest {
         goalDto.setName("Test Goal");
         goalDto.setDescription("Test Description");
         goalDto.setType(GoalType.SELF);
-        goalDto.setStartDate(LocalDateTime.now());
-        goalDto.setAchievedByDate(LocalDateTime.now().plusMonths(6));
+        goalDto.setStartDate(ZonedDateTime.now());
+        goalDto.setAchievedByDate(ZonedDateTime.now().plusMonths(6));
         goalDto.setCompetencyIds(new HashSet<>(List.of(UUID.randomUUID())));
         goalDto.setCredentialIds(new HashSet<>(List.of(UUID.randomUUID())));
         goalDto.setLearningResourceIds(

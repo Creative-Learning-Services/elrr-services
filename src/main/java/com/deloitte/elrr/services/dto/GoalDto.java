@@ -1,6 +1,6 @@
 package com.deloitte.elrr.services.dto;
 
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.Set;
 import java.util.UUID;
 
@@ -36,11 +36,11 @@ public class GoalDto extends ExtensibleDto {
     @Size(max = 65535)
     private String description;
 
-    private LocalDateTime startDate;
+    private ZonedDateTime startDate;
 
-    private LocalDateTime achievedByDate;
+    private ZonedDateTime achievedByDate;
 
-    private LocalDateTime expirationDate;
+    private ZonedDateTime expirationDate;
 
     private Set<UUID> competencyIds;
 
